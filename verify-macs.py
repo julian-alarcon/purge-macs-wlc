@@ -14,7 +14,7 @@ import argparse
 import json
 import requests
 
-parser = argparse.ArgumentParser(description='Python script to find old devices in Graylog2 configured in WLC')
+parser = argparse.ArgumentParser(description='Find old devices in Graylog2 configured in WLC')
 parser.add_argument('-i', dest='graylog_ip', type=str,
                     help='The IP of Graylog2 Server')
 parser.add_argument('-o', dest='graylog_api_port', type=int,
@@ -33,8 +33,8 @@ parser.parse_args()
 args.backwards_time = args.backwards_time*86400 # Convert backwards time to seconds, (days*24*60*60)
 macs_file = open(args.file_path, "r")
 lines_from_file = macs_file.readlines()
-macs_to_remove = open("macs_to_remove.txt","w")
-commands_to_remove_macs = open("commands_to_remove_macs.txt","w")
+macs_to_remove = open("macs_to_remove.txt", "w")
+commands_to_remove_macs = open("commands_to_remove_macs.txt", "w")
 for mac_address in lines_from_file:
     mac_address_query = mac_address[:17]
     mac_address_query = mac_address_query.replace(":", "%5C%3A")
