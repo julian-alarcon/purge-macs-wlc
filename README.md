@@ -73,9 +73,9 @@ optional arguments:
 
 ## Use output to purge old MAC's devices from WLC
 
-Open the file macs_to_remove.txt and check all the found MACs.
+Open the file ```macs_to_remove.txt``` and check all the found MACs.
 
-Then open the commands_to_remove_macs.txt file, open an SSH session to your WLC and paste the text.
+Then open the ```commands_to_remove_macs.txt``` file, open an SSH session to your WLC and paste the text.
 
 This is an example of the execution of the pasted command
 
