@@ -136,7 +136,7 @@ I tested in Ubuntu 17.10 with Python 2.7.14 and Python 3.6.3. It should work in 
 
 ## Documentation
 
-[Graylog API documentation](http://docs.graylog.org/en/2.3/pages/configuration/rest_api.html)
-[Cisco WLC Command Reference](https://www.cisco.com/c/en/us/td/docs/wireless/controller/8-3/command-reference/b-cr83/preface.html)
+* [Graylog API documentation](http://docs.graylog.org/en/2.3/pages/configuration/rest_api.html)
+* [Cisco WLC Command Reference](https://www.cisco.com/c/en/us/td/docs/wireless/controller/8-3/command-reference/b-cr83/preface.html)
 
 > BTW: I know that MAC filtering is a **poor security solution** for wireless authorization/authentication, it's really easy to spoof an authorized MAC. But, this is business. **¯\\_(ツ)_/¯**
