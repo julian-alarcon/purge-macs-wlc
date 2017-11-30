@@ -51,7 +51,7 @@ for mac_address in lines_from_file:
     json_response = requests.get(graylog_url, auth=(args.graylog_user, args.graylog_password))
     first_json_section = json_response.json()
     second_json_section = json.loads(first_json_section['built_query'])
-    if (first_json_section['count']) > 0:
+    if (first_json_section['count']) == 0:
         macs_to_remove.write(mac_address[:17]+"\n")
         commands_to_remove_macs.write("config macfilter delete " + mac_address[:17]+"\n")
         # Print the URL output used to check the MAC address.
